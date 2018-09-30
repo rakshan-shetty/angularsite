@@ -1,0 +1,14 @@
+
+.summaryBlock{
+    min-height: 460px;
+    background-color: #f3f3f3;
+}
+.summaryBlock * {
+    background-color: #f3f3f3;
+   
+
+}
+.summaryBlock .card, .summaryBlock .card-block{
+    border:0px;
+    border-radius: 0px;  
+}

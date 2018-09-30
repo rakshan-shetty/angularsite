@@ -1,0 +1,28 @@
+.sticky-top{
+    top:80px;
+}
+.list-group-item i.fa-chevron-right{
+    display: none;
+}
+
+.list-group-item {
+    z-index: 2;
+    color: #666;
+    background-color: transparent;
+    border-color:  transparent;
+    padding: 5px;
+    position: relative;
+}
+.list-group-item.active i{
+    color:#c49300;
+    margin-top: 5px;
+   }
+   .list-group-item.active i{
+    display: inline-block;
+    margin-top: 5px;
+   }
+h5{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ffffff;
+    color: #343a40; 
+}

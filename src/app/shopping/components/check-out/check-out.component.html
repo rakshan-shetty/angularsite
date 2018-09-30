@@ -1,0 +1,18 @@
+<div class="checkoutContainer ">
+    
+    <div class="row" *ngIf="cart$|async  as cart">
+      <div class="col-md-6">
+        <div class="p-25">
+          <h5 class="card-title">Shipping Address</h5>
+      <shipping-form [cart]="cart"></shipping-form>
+    </div>
+      </div>
+      <div class="col-md-6 ">
+            <shopping-cart-summary [cart]="cart"></shopping-cart-summary>
+
+      </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,83 @@
+<div class="mainContainer">
+    <div class="text-center m-b-10">
+            <a routerLink="/admin/products/new" class="btn btn-primary"><i class="fa fa-plus"></i> Add new product</a>
+    </div>
+
+<p>
+    <input
+    (keyup)="filter(query.value)"
+    #query
+    type="text" placeholder="Search"class="form-control">
+</p>
+<!-- <table class="table table-striped" [mfData]="products" #mf="mfDataTable" [mfRowsOnPage]="5">
+        <thead>
+        <tr>
+            <th>
+                <mfDefaultSorter by="title">Title</mfDefaultSorter>
+            </th>
+            <th>
+                <mfDefaultSorter by="price">Price</mfDefaultSorter>
+            </th>
+            <th>
+                
+            </th>
+           
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of mf.products">
+            <td>{{item.title}}</td>
+            <td>{{item.price}}</td>
+            
+            <td><a [routerLink]="['/admin/products/',item.$key]">Edit</a></td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="4">
+                <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
+            </td>
+        </tr>
+        </tfoot>
+    </table> -->
+
+<div class="row">
+    <ng-container *ngFor="let p of filteredProducts; let i= index">
+
+    
+    <div class="col-md-3 m-b-25"  >
+            <div class="card text-center p-0 thumbnail card-text" [style.backgroundImage]="'url('+p.imageUrl+')'" >
+                   
+                    <div class="card-body p-b-0">
+                      <h5 class="card-title font-italic">{{p.title}}</h5>
+                      <p class="card-text">{{p.price| currency:'INR':'₹'}}</p>
+                      <a class="btn-custom" [routerLink]="['/admin/products/',p.$key]"><i class="fa fa-pencil"></i> Edit</a>
+                    </div>
+                  </div>
+    </div>
+    <div *ngIf="(i+1)%4==0" class="w-100"></div>
+</ng-container>
+</div>
+
+    
+
+
+
+<!-- 
+<table class="table">
+    <thead>
+        <tr>
+        <th>title</th>
+        <th>price</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of filteredProducts">
+            <td>{{p.title}}</td>
+            <td>{{p.price}}</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table> -->
+</div>

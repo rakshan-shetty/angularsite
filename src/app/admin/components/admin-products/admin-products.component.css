@@ -1,0 +1,36 @@
+.thumbnail{
+    background-size: cover;
+    position: relative;
+    transition: transform .2s;
+}
+.thumbnail::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.thumbnail:hover{
+    transform: scale(1.1); 
+}
+.mainContainer{
+    padding-top: 50px;
+}
+.card-text{
+    color: #fff;
+}
+.card-body{
+    position: relative;
+}
+.btn-custom{
+    margin-left: -21px;
+    margin-right: -21px;
+    background-color: #0000008f;
+    display: block;
+    padding: 5px;
+    color: #fff;
+    margin-bottom: -1px;
+}
+.btn-custom:hover{
+    background-color: #000000ad;
+}
