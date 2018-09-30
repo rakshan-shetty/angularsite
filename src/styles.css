@@ -1,0 +1,99 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css"; 
+@import "~font-awesome/css/font-awesome.css"; 
+
+body{
+    padding-top: 15px;
+    /* background-image: url(assets/images/wallpaper.jpg);
+    background-size: cover;
+    background-attachment: fixed; */
+}
+/* body::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+} */
+.col-md-4 .card-img-top {
+    height: 170px;
+}
+.m-b-0{
+    margin-bottom: 0px;
+}
+.m-b-5{
+    margin-bottom: 5px;
+}
+.m-b-10{
+    margin-bottom: 10px;
+}
+.m-b-15{
+    margin-bottom: 15px;
+}
+.m-b-20{
+    margin-bottom: 20px;
+}
+.m-b-25{
+    margin-bottom: 25px;
+}
+
+.p-0{
+    padding: 0px;
+}
+.p-5{
+    padding: 5px;
+}
+.p-10{
+    padding: 10px;
+}
+.p-15{
+    padding: 15px;
+}
+.p-20{
+    padding: 20px;
+}
+.p-25{
+    padding: 25px;
+}
+.p-b-0{
+    padding-bottom: 0px;
+}
+.p-b-5{
+    padding-bottom: 5px;
+}
+.p-b-10{
+    padding-bottom: 10px;
+}
+.p-b-15{
+    padding-bottom: 15px;
+}
+.p-b-20{
+    padding-bottom: 20px;
+}
+.btn-secondary{
+    background-color: #343a40 ;
+    border-color: #343a40;
+}
+.form-group{
+    position:relative;
+}
+.form-group .alert-danger{
+    position: absolute;
+    top: 33px;
+    padding: 2px;
+    font-size: 10px;
+    right: 1px;
+    border-top-right-radius: 21px;
+    border: 0px;
+    color: #fff;
+    background-color: #ff6868;
+    border-radius: 0px;
+    border-top-right-radius: 3px;
+}
+.ng-touched.ng-invalid{
+    border-color: #ff6868;
+}
+.btn.btn-primary, .btn.btn-danger{
+    border-radius: 0px;
+}
